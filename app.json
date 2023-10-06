@@ -1,0 +1,103 @@
+{
+    "name": "Film-Detective",
+    "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
+    "logo":"https://telegra.ph/file/11f63e3bfe35d904051a5.jpg",
+    "stack": "container",
+    "keywords": [
+      "telegram",
+      "film-detective",
+      "auto-filter",
+      "filter",
+      "best",
+      "srilanka",
+      "pyrogram",
+      "media",
+      "search",
+      "channel",
+      "index",
+      "inline"
+    ],
+    "website": "https://github.com/malindunimsara",
+    "repository": "https://github.com/malindunimsara/Film-Detective",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your bot token.",
+            "value": "5429635253:AAEP9Lsy1Bk3TxDDewwtwf2XKU-W__l3UBU",
+            "required": true
+        },
+        "API_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": "15197646",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": "12ad370a8455c02701649e1d7b322dc2",
+            "required": true
+        },
+        "AUTH_USERS": {
+            "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage.",
+            "required": false
+        "CHANNELS": {
+            "description": "Username or ID of channel or group. Separate multiple IDs by space.",
+            "value": "-1001616221826 -1001494597996 -1001672559190",
+            "required": true
+        },
+        "ADMINS": {
+            "description": "Username or ID of Admin. Separate multiple Admins by space.",
+            "value": "5512382938 2071644540",
+            "required": true
+        },
+        "PICS": {
+            "description": "Add some telegraph link of pictures .",
+            "value": "https://telegra.ph/file/65231bb88d4619354faf2.jpg",
+            "required": true
+        },
+        "LOG_CHANNEL": {
+            "description": "Bot Logs, Give a channel id with -100xxxxxxx",
+            "value": "-1001787331054",
+            "required": true
+        },
+        "CUSTOM_FILE_CAPTION": {
+            "description": "enter",
+            "value": "shit",
+            "required": true
+        },
+        "BATCH_FILE_CAPTION": {
+            "description": "kiyavanna epa",
+            "value": "shit on",
+            "required": true
+        },
+        "AUTH_CHANNEL": {
+            "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
+            "value": "-1001494597996",
+            "required": true
+        },
+        "DATABASE_URI": {
+            "description": "mongoDB URI. Get this value from https://www.mongodb.com. For more help watch this video.",
+            "value": "mongodb+srv://film-detective-bot:darkdevil777@cluster0.l2wokn3.mongodb.net/?retryWrites=true&w=majority",
+            "required": true
+        },
+        "DATABASE_NAME": {
+            "description": "Name of the database in mongoDB.",
+            "value": "cluster0",
+            "required": true
+        },
+        "COLLECTION_NAME": {
+            "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
+            "value": "Devil_films",
+            "required": true
+        }
+        
+    },
+    "addons": [],
+    "buildpacks": [{
+        "url": "heroku/python"
+    }],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
