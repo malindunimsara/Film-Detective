@@ -1,21 +1,21 @@
 {
     "name": "Film-Detective",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
-    "logo":"https://telegra.ph/file/11f63e3bfe35d904051a5.jpg",
+    "logo": "https://telegra.ph/file/11f63e3bfe35d904051a5.jpg",
     "stack": "container",
     "keywords": [
-      "telegram",
-      "film-detective",
-      "auto-filter",
-      "filter",
-      "best",
-      "srilanka",
-      "pyrogram",
-      "media",
-      "search",
-      "channel",
-      "index",
-      "inline"
+        "telegram",
+        "film-detective",
+        "auto-filter",
+        "filter",
+        "best",
+        "srilanka",
+        "pyrogram",
+        "media",
+        "search",
+        "channel",
+        "index",
+        "inline"
     ],
     "website": "https://github.com/malindunimsara",
     "repository": "https://github.com/malindunimsara/Film-Detective",
@@ -38,6 +38,7 @@
         "AUTH_USERS": {
             "description": "Username or ID of users to give access of inline search. Separate multiple users by space.\nLeave it empty if you don't want to restrict bot usage.",
             "required": false
+        },
         "CHANNELS": {
             "description": "Username or ID of channel or group. Separate multiple IDs by space.",
             "value": "-1001616221826 -1001494597996 -1001672559190",
@@ -88,13 +89,11 @@
             "value": "Devil_films",
             "required": true
         }
-        
     },
-    "addons": [],
-    "buildpacks": [{
-        "url": "heroku/python"
-    }],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
     "stack": "heroku-22"
-    }
-
 }
